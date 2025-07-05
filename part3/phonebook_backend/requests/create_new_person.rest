@@ -1,0 +1,24 @@
+### GET all persons
+GET http://localhost:3001/api/persons/
+
+
+### POST a person 
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "joe",
+  "number": "1111"
+}
+
+### PUT to update a person
+PUT http://localhost:3001/api/persons/<id>
+Content-Type: application/json
+
+{
+  "name": "joe",
+  "number": "11111188"
+}
+
+### Delete a person
+DELETE http://localhost:3001/api/persons/<id>
