@@ -1,0 +1,30 @@
+### Get all blogs
+GET http://localhost:3001/api/blogs
+
+### Add a blog
+POST http://localhost:3001/api/blogs
+content-type: application/json
+Authorization: Bearer <insert token>
+
+  {
+    "title": "testst React patterns",
+    "author": "Michael Chan",
+    "url": "https://reactpatterns.com/",
+    "likes": 7
+  }
+
+### Update a blog
+PUT http://localhost:3001/api/blogs/5a422a851b54a676234d17f7
+content-type: application/json
+Authorization: Bearer <insert token>
+
+  {
+    "title": "React patterns",
+    "author": "Michael Chan",
+    "url": "https://reactpatterns.com/",
+    "likes": 7
+  }
+
+### Delete blog (with token)
+DELETE http://localhost:3001/api/blogs/id
+Authorization: Bearer <insert token>
