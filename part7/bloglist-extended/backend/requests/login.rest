@@ -1,0 +1,8 @@
+### Login Request for Blogs API
+POST http://localhost:3001/api/login
+content-type: application/json
+
+{
+    "username": "testuser",
+    "password": "test123456"
+}
